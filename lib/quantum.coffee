@@ -3,9 +3,7 @@ require 'obj-uber'
 q = require 'q'
 uuid = require 'uuid'
 
-exports = module.exports ? window.Quantum
-
-exports = Quantum = (data) ->
+Quantum = (data) ->
 	id = new ArrayBuffer(16)
 	@uber(data).uber
 		_root: @
@@ -186,7 +184,7 @@ idEquals = (a,b) ->
 
 
 
-
+module.exports = Quantum
 
 
 

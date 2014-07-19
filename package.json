@@ -4,11 +4,29 @@
   "description": "Quantum of data",
   "main": "index.js",
   "scripts": {
-    "test": "test.coffee"
+    "test": "mocha -R spec --compilers coffee:coffee-script/register"
   },
-  "author": "",
+  "author": "Luke Nimtz",
   "license": "none",
   "dependencies": {
-    "node-uuid": "~1.4.1"
-  }
+    "coffee-script": "^1.7.1",
+    "node-uuid": "~1.4.1",
+    "obj-uber": "^1.0.4",
+    "q": "^1.0.1",
+    "uuid": "^1.4.1"
+  },
+  "devDependencies": {
+    "mocha": "^1.20.1"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/protometa/quantum.git"
+  },
+  "bugs": {
+    "url": "https://github.com/protometa/quantum/issues"
+  },
+  "homepage": "https://github.com/protometa/quantum"
 }
